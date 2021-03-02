@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&amp;family=Roboto:wght@400;500;600;700;800;900&amp;display=swap";
 
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1280px;
+}
+
 .white-bg {
   background: #fff
 }
@@ -372,6 +376,8 @@ hr {
   padding: 80px 40px 40px 40px;
   background: #FBFBFB;
   border-radius: 7px;
+  -webkit-box-shadow: 0 5px 50px -10px rgb(0 0 0 / 20%);
+  box-shadow: 0 5px 50px -10px rgb(0 0 0 / 20%);
 }
 
 .form-box .text-sub {
@@ -2390,6 +2396,19 @@ hr {
   padding-bottom: 170px
 }
 
+.testimonial-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-title I {
+  font-size: 46px;
+  margin-right: 30px;
+}
+
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .testimonial-padding {
     padding-top: 190px;
@@ -3164,6 +3183,50 @@ opacity: 1;
   background-size: cover
 }
 
+.future-blobs {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 930px;
+  z-index: -1;
+  top: 0;
+  pointer-events: none
+}
+
+.future-blobs .blob_0 {
+  top: 17.2rem;
+  right: 19rem;
+  position: absolute
+}
+
+.future-blobs .blob_1 {
+  top: 12rem;
+  right: 42rem;
+  position: absolute
+}
+
+.future-blobs .blob_2 {
+  bottom: 24rem;
+  left: 65rem;
+  position: absolute
+}
+
+.future-blobs .blob_3 {
+  bottom: 21rem;
+  left: 62rem;
+  position: absolute
+}
+
+.future-blobs .blob_4 {
+  bottom: 19rem;
+  left: 59rem;
+  position: absolute
+}
+
 @media only screen and (min-width:992px) and (max-width:1199px) {
   .slider-height {
     min-height: 1000px
@@ -3240,14 +3303,14 @@ opacity: 1;
 
 .slider-area,
 .slider-area2 {
-  background-image: url(assets/img/hero/h1_hero.png);
+  /* background-image: url(assets/img/hero/h1_hero.png); */
   background-size: cover;
   background-repeat: no-repeat
 }
 
 .slider-area.slider-area2,
 .slider-area2.slider-area2 {
-  background-image: url(assets/img/hero/hero2.png)
+  /* background-image: url(assets/img/hero/hero2.png) */
 }
 
 .slider-area .hero__logo,
@@ -3284,30 +3347,11 @@ opacity: 1;
   }
 }
 
-.slider-area .hero__caption span,
-.slider-area2 .hero__caption span {
-  color: #31ff7a;
-  font-size: 60px;
-  line-height: 1.2;
-  font-weight: 400;
-  margin-bottom: 30px;
-  display: block
-}
-
-@media(max-width:575px) {
-
-  .slider-area .hero__caption span,
-  .slider-area2 .hero__caption span {
-    margin-bottom: 30px;
-    font-size: 56px
-  }
-}
-
 .slider-area .hero__caption h1,
 .slider-area2 .hero__caption h1 {
   font-size: 44px;
-  font-weight: 600;
-  color: #fff;
+  font-weight: 500;
+  color: #000;
   line-height: 1.3;
   margin-bottom: 22px
 }
@@ -3352,8 +3396,8 @@ opacity: 1;
 
 .slider-area .hero__caption p,
 .slider-area2 .hero__caption p {
-  color: #fff;
-  font-size: 28px;
+  color: #000;
+  font-size: 24px;
   margin-bottom: 34px;
   margin-top: 40px;
   /* padding: 0 50px */
@@ -4323,13 +4367,10 @@ opacity: 1;
 }
 
 .footer-social a {
-  background: rgba(128, 136, 255, .1);
-  color: #8088ff;
+  font-size: 20px;
+  line-height: 40px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  font-size: 14px;
-  line-height: 40px;
   display: inline-block;
   text-align: center;
   margin-right: 8px
@@ -4337,7 +4378,10 @@ opacity: 1;
 
 .footer-social a:hover {
   color: #fff;
-  background: #404dff
+  background: #38CCF5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .footer-social a i {

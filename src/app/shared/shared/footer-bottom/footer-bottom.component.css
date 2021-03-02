@@ -8,7 +8,6 @@
 .copyright {
     padding-top: 3px;
     font-size: 14px;
-    font-weight: 600;
     color: #474747;
 }
 .footer-bottom {
@@ -21,4 +20,25 @@
     justify-content: space-between;
     align-items: center;
     padding: 2.4rem 0 2.8rem;
+}
+
+.footer-copyright {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 3rem;
 }
