@@ -279,8 +279,8 @@ hr {
 }
 
 .form-control:focus {
-  border-color: #006666;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(0, 102, 102, 0.5);
+  border-color: #38CCF5;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(56, 204, 245, 0.5);
 }
 
 .custom-control {
@@ -296,7 +296,7 @@ hr {
 /* This is the checked state */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before,
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #006666;  /* teal */
+  background-color: #38CCF5;  /* teal */
   border-radius: 50%;
 }
 
