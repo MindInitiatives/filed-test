@@ -1,3 +1,5 @@
+<router-outlet></router-outlet>
+
 <main>
 
   <section class="slider-area ">
@@ -81,7 +83,7 @@
     <div class="col-lg-6 mb-4">
       <div class="hero__caption">
     <h1 data-aos="fade-up" data-aos-delay="100">Book a demo today and <br> get two weeks for <span style="color: #38CCF5;"> free.</span> Why?</h1>
-    <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Because Our AI-Powered Software Will Exceed Your Marketing Goals.</p>
+    <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Because Our AI-Powered Software <br> Will Exceed Your Marketing Goals.</p>
     
     <div class="screen-img d-none d-lg-block">
       <img src="assets/img/elements/Artboard 1.png" alt="" class=" w-100 gadgets">
@@ -91,7 +93,7 @@
     </div>
     <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
     <div class="form-box form-content">
-    <h3 class="h4 text-black mb-4">Sign Up</h3>
+    <h3 class="h4 text-black mb-4">Let's Start</h3>
     <p class="text-sub">Fill out the form and we'll get in touch to get your trial set up.</p>
 
     <form (submit)="next()" [formGroup]="optionForm">
@@ -124,7 +126,9 @@
                                     </select>
                                 </div>
                                 <div class="form-button">
-                                  <button class="w100 ibtn">Get Started</button> 
+                                  <a [routerLink]="['/user-data']">
+                                  <button class="w100 ibtn">Get Started</button>
+                                </a>
                               </div>
     </form>
     </div>
