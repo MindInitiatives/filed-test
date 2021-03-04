@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
-import { FooterBottomComponent } from './components/footer-bottom/footer-bottom.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 
 
 
 @NgModule({
-  declarations: [FooterComponent, FooterBottomComponent],
+  declarations: [FooterComponent, TestimonialComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    FooterComponent, FooterBottomComponent
+    FooterComponent, TestimonialComponent
   ]
 })
 export class SharedModule { }

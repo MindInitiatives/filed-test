@@ -1,91 +1,47 @@
-  
-  .testimonials-clean h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
-    .testimonials-clean h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
-    }
-  }
-  
-  .testimonials-clean .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto;
-  }
-  
-  .testimonials-clean .intro p {
-    margin-bottom:0;
-  }
-  
-  .testimonials-clean .people {
-    padding:50px 0 20px;
-  }
+.footer-bottom-section {
+    /* padding-left: 4.8rem;
+    padding-right: 4.8rem; */
+    background:#595957;
+    position: relative;
+}
 
-  @media(max-width:575px) {
+.copyright {
+    padding-top: 3px;
+    font-size: 14px;
+    color: #474747;
+}
+.footer-bottom {
+    /* text-align: center; */
+    padding: 40px 0;
+}
 
-    .testimonials-clean .item {
-      margin-bottom: 72px;
-  }
-  }
-  
-  /* .testimonials-clean .item {
-    margin-bottom:32px;
-  } */
-  
-  @media (min-width:768px) {
-    .testimonials-clean .item {
-      margin-bottom: 32px;
-    }
-  }
-  
-  .testimonials-clean .item .note {
-    padding:30px 0;
-    position:relative;
-  }
+.footer-bottom .logo-copyright-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2.4rem 0 2.8rem; */
+}
 
-  .testimonials-clean .item .note p {
-    color:#fff;
-  }
-  
-  .testimonials-clean .item .author {
-    margin-top:28px;
+.footer-copyright {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.footer-right,
+.copyright {
     display: flex;
     align-items: center;
-  }
+}
 
-  .testimonials-clean .item .title-name {
-    color: #FFF;
-  }
-  
-  .testimonials-clean .item .name {
-    font-weight:bold;
-    margin-bottom:2px;
-    color:inherit;
-  }
-  
-  .testimonials-clean .item .title {
-    font-size:13px;
-    color: #FFF;
-    font-style: italic;
-  }
-  
-  .testimonials-clean .item .description {
-    font-size:15px;
-    margin-bottom:0;
-  }
-  
-  .testimonials-clean .item img {
-    max-width:109px;
-    float:left;
-    margin-right:12px;
-    margin-top:-5px;
-  }
-  
-  
+.nav-right-links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .nav-link {
+    display: block;
+    padding: .5rem 3rem;
+} */
