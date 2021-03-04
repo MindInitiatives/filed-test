@@ -1,28 +1,24 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ReactiveFormConfig } from '@rxweb/reactive-form-validators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
   title = 'filed-test';
-  optionForm : FormGroup;
+
+  constructor() { }
 
   
   ngOnInit(): void {
-    this.optionForm = new FormGroup({
-      option: new FormControl('', Validators.required),
-      adBudget: new FormControl('', Validators.required)});
-  }
 
-
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
-
-  next() {
-
+    ReactiveFormConfig.set({
+      "validationMessage": {
+          "required": "This field is required",
+          "email":"email is not valid",
+      }
+  });
   }
 }
